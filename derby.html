@@ -1,0 +1,54 @@
+<html>
+  <head>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+
+  <div id = "infoPane">
+  <table>
+  <tr><th>Track Position</th><td><input type="text" id="trackPos"></td></tr>
+  <tr><th>Track Position</th><td><input type="text" name="trackPos"></td></tr>
+  <tr><th>Track Position</th><td><input type="text" name="trackPos"></td></tr>
+  
+</table> 
+    
+    </div>
+    <div id = "trackDiv">
+    <svg id="track"  viewBox="0 0 900 570" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <title>Example arcs01 - arc commands in path data</title>
+      <desc></desc>
+      <rect x="0" y="0" width="899" height="569" fill="none" stroke="blue" stroke-width="1" />
+      <path d="M275,30 a265,265 0 1,0 0,530 l350,-20 a265,265 0 1,0 0,-530 z" fill="#FFAA55" stroke="blue" stroke-width="10" />
+      <path id="inside" d="M275,160 a125,125 0 1,0 0,250 l350,0 a125,125 0 1,0 0,-250 z" fill="white" stroke="blue" stroke-width="5" />
+      <line x1="275" y1="40" x2="275" y2="150" style="stroke:rgb(255,0,0);stroke-width:5" />
+      <line x1="375" y1="50" x2="375" y2="120" style="stroke:rgb(255,0,0);stroke-width:5" />
+      <line x1="475" y1="50" x2="475" y2="120" style="stroke:rgb(255,0,0);stroke-width:5" />
+      <line x1="575" y1="20" x2="575" y2="150" style="stroke:rgb(255,0,0);stroke-width:5" />
+      <defs>
+        <g id="blocker">
+          <circle cx="15px" cy="15px" r="15px" style="stroke-width:3;fill:grey" />
+        </g>
+        <g id="pivot">
+          <circle cx="15px" cy="15px" r="15px" style="stroke-width:0;fill:grey" />
+          <rect x="2" y="11" width="26" height="6" style="stroke-width:1" />
+        </g>
+        <g id="jammer">
+          <circle cx="15px" cy="15px" r="15px" style="stroke-width:3;fill:grey" />
+          <path id="svg_5" d="m14.90835,18.71759l-4.55861,3.57176l1.74258,-5.7777l-4.55761,-3.57175l5.63366,0.00111l1.49737,-4.96806l0.2442,-0.80689l1.73954,5.77384l5.63523,0l-4.55964,3.57175l1.74303,5.7794l-4.55974,-3.57345l0,0l-0.00001,-0.00001z" fill-opacity="null" stroke-opacity="null" stroke-width="4"  />
+        </g>
+      </defs>
+      <use id="red1" xlink:href="#blocker" x="500" y="25" style="stroke:red" />
+      <use id="red2" xlink:href="#pivot" x="500" y="58" style="fill:red" />
+      <use id="red3" xlink:href="#blocker" x="500" y="91" style="stroke:red" />
+      <use id="red4" xlink:href="#blocker" x="500" y="124" style="stroke:red" />
+      <use id="red5" xlink:href="#jammer" x="580" y="58" style="stroke:red" />
+      <use id="blue1" xlink:href="#blocker" x="540" y="25" style="stroke:blue" />
+      <use id="blue2" xlink:href="#pivot" x="540" y="58" style="fill:blue" />
+      <use id="blue3" xlink:href="#blocker" x="540" y="91" style="stroke:blue" />
+      <use id="blue4" xlink:href="#blocker" x="540" y="124" style="stroke:blue" />
+      <use id="blue5" xlink:href="#jammer" x="580" y="124" style="stroke:blue" />
+    </svg>
+   </div>
+  </body>
+</html>

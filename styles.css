@@ -1,0 +1,23 @@
+.wrapper{
+position: fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+z-index: 50
+}
+
+#infoPane {
+	position:absolute;
+	border: 1px solid red;
+	left:270;
+	top:150;
+	width:350;
+	height:240;
+	z-index:100
+}
+#trackDiv {
+	width: 70%;
+	border: 1px solid red;
+	float: right;
+}
